@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECI SL | Institutional Intelligence</title>
+    <!-- Importing Sophisticated Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="eci_sovereign.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Your exact specified palette
+                        eciBlack: '#050505',
+                        eciCharcoal: '#121212',
+                        eciEggWhite: '#F4F4F0',
+                        eciBeige: '#E8DCC4',
+                        eciGold: '#C5A861',
+                        eciElectric: '#00F0FF'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'], // Calm, highly legible
+                        serif: ['Cinzel', 'serif']     // Sophisticated institutional headers
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #050505; color: #F4F4F0; }
+        .electric-glow { box-shadow: 0 0 15px rgba(0, 240, 255, 0.3); }
+        .border-electric { border-color: #00F0FF; }
+        .status-blink { animation: blink 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+        
+        /* Ultra-minimal scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #121212; border-radius: 10px; }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-sans">
+
+    <!-- Minimalist Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-eciBlack/80 backdrop-blur-md border-b border-eciCharcoal">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <!-- Electric Blue Interception -->
+                <div class="w-2 h-2 bg-eciElectric rounded-full status-blink electric-glow"></div>
+                <span class="font-serif text-2xl tracking-widest text-eciEggWhite">ECI SL</span>
+            </div>
+            <div class="hidden md:flex space-x-10">
+                <a href="#intelligence" class="text-xs tracking-widest text-eciBeige hover:text-eciGold transition-colors uppercase">Intelligence</a>
+                <a href="#structuring" class="text-xs tracking-widest text-eciBeige hover:text-eciGold transition-colors uppercase">Structuring</a>
+                <a href="#advisory" class="text-xs tracking-widest text-eciBeige hover:text-eciGold transition-colors uppercase">Advisory</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sovereign Hero Section -->
+    <main class="flex-grow pt-32">
+        <div class="max-w-7xl mx-auto px-6 py-24 lg:py-40">
+            <!-- Institutional Tagline -->
+            <div class="border-l-2 border-eciElectric pl-6 mb-12">
+                <p class="text-eciElectric font-mono text-xs tracking-widest uppercase mb-2">Live Node // Madrid — Barcelona</p>
+                <h1 class="font-serif text-5xl lg:text-7xl font-semibold text-eciEggWhite leading-tight">
+                    Structural Integrity <br>
+                    <span class="text-eciGold italic text-4xl lg:text-6xl">in a volatile baseline.</span>
+                </h1>
+            </div>
+            
+            <p class="font-sans text-lg text-eciBeige max-w-2xl leading-relaxed mb-16 font-light">
+                Institutional-grade validation, macroeconomic telemetry, and capital structuring. We bypass commercial lag to deliver raw, uncompromised intelligence to deal teams, corporate treasuries, and sovereign architects.
+            </p>
+        </div>
+
+        <!-- Clean, Sparse Detail Grid -->
+        <div class="border-t border-eciCharcoal bg-eciCharcoal/20">
+            <div class="max-w-7xl mx-auto px-6 py-32">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24">
+                    
+                    <!-- Area 1: Trade Finance -->
+                    <div class="group">
+                        <div class="h-[1px] w-12 bg-eciGold mb-6 transition-all group-hover:w-24 group-hover:bg-eciElectric"></div>
+                        <h2 class="font-serif text-2xl text-eciEggWhite mb-4">SBLC & Trade Finance</h2>
+                        <p class="text-eciBeige font-light leading-relaxed text-sm">
+                            Automated ISO 15022 verification. Tier 1 BIC routing cross-checks and strict parsing of MT760 instruments against synthetic header mismatches.
+                        </p>
+                    </div>
+
+                    <!-- Area 2: PPP -->
+                    <div class="group">
+                        <div class="h-[1px] w-12 bg-eciGold mb-6 transition-all group-hover:w-24 group-hover:bg-eciElectric"></div>
+                        <h2 class="font-serif text-2xl text-eciEggWhite mb-4">PPP & Capital Structuring</h2>
+                        <p class="text-eciBeige font-light leading-relaxed text-sm">
+                            Private Placement Program compliance modeling. Sovereign risk analysis and institutional comfort letter auditing for global capital deployment.
+                        </p>
+                    </div>
+
+                    <!-- Area 3: SIAI -->
+                    <div class="group">
+                        <div class="h-[1px] w-12 bg-eciGold mb-6 transition-all group-hover:w-24 group-hover:bg-eciElectric"></div>
+                        <h2 class="font-serif text-2xl text-eciEggWhite mb-4">SIAI Intelligence</h2>
+                        <p class="text-eciBeige font-light leading-relaxed text-sm">
+                            Air-gapped, zero-trust artificial intelligence frameworks. Proprietary document intelligence and automated analytical workflows.
+                        </p>
+                    </div>
+
+                    <!-- Area 4: Macro -->
+                    <!-- This acts as the anchor for your LinkedIn intercepts -->
+                    <div class="group" id="intelligence">
+                        <div class="h-[1px] w-12 bg-eciGold mb-6 transition-all group-hover:w-24 group-hover:bg-eciElectric"></div>
+                        <h2 class="font-serif text-2xl text-eciEggWhite mb-4">Macroeconomic Telemetry</h2>
+                        <p class="text-eciBeige font-light leading-relaxed text-sm">
+                            Real-time structural monitoring. Deep market dives into supply chain chokepoints, energy baselines (Brent), and sovereign indices (IBEX/US500).
+                        </p>
+                        <a href="#" class="inline-block mt-6 text-xs font-mono text-eciElectric hover:text-eciEggWhite transition-colors">
+                            [ View Latest Intercepts ]
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Ultra-Minimal Footer -->
+    <footer class="border-t border-eciCharcoal py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <span class="font-serif text-xl tracking-widest text-eciGold">ECI SL</span>
+            <span class="font-mono text-xs text-eciBeige/50 uppercase tracking-widest">Sovereign Architecture // 2026</span>
+        </div>
+    </footer>
+
+</body>
+</html>

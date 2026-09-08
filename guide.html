@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECI SL | Operator's Guide & Facility Protocol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="eci_sovereign.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        eciBlack: '#0a0a0a',
+                        eciCharcoal: '#2A2A2A',
+                        eciBone: '#EAE6DF', 
+                        eciBeige: '#E8DCC4',
+                        eciGold: '#C5A861',
+                        eciElectric: '#0070FF', 
+                        eciElectricGlow: '#00F0FF' 
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Cinzel', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #EAE6DF; color: #0a0a0a; }
+        .electric-glow { box-shadow: 0 0 12px rgba(0, 240, 255, 0.6); }
+        .status-blink { animation: blink 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-eciBone/90 backdrop-blur-md border-b border-eciBeige/50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <svg class="w-5 h-5 text-eciGold inline-block mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                <span class="font-serif text-2xl tracking-widest text-eciBlack font-semibold">ECI SL <span class="text-eciCharcoal/40 font-mono text-sm ml-2">// OPERATOR'S GUIDE</span></span>
+            </div>
+            <div>
+                <a href="index.html" class="text-xs font-semibold tracking-widest text-eciCharcoal hover:text-eciElectric uppercase transition-colors">&larr; Return to Main Node</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Guide Hero -->
+    <main class="flex-grow pt-32">
+        <div class="max-w-5xl mx-auto px-6 py-20 text-center flex flex-col items-center justify-center border-b border-eciBeige/50 mb-20">
+            <div class="flex items-center gap-4 mb-6 justify-center">
+                <div class="h-[1px] w-12 bg-eciGold"></div>
+                <p class="text-eciGold font-mono text-xs font-bold tracking-widest uppercase">Standard Operating Procedures</p>
+                <div class="h-[1px] w-12 bg-eciGold"></div>
+            </div>
+            <h1 class="font-serif text-4xl lg:text-6xl font-bold text-eciBlack leading-tight mb-6">
+                Facility Utilization & <br>
+                <span class="text-eciGold italic font-medium text-3xl lg:text-5xl">Engagement Protocol</span>
+            </h1>
+            <p class="font-sans text-lg text-eciCharcoal max-w-2xl mx-auto leading-relaxed font-light">
+                A definitive manual for principals, independent operators, and institutional teams engaging ECI SL's sovereign data architecture and due diligence engines.
+            </p>
+        </div>
+
+        <!-- Protocol Content Grid -->
+        <div class="max-w-5xl mx-auto px-6 space-y-16 mb-32">
+            
+            <!-- Phase 1 -->
+            <div class="bg-white p-10 border border-eciBeige shadow-sm">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="font-mono text-xs bg-eciBlack text-eciBone px-3 py-1 uppercase tracking-widest">Phase 01</span>
+                    <h3 class="font-serif text-2xl font-semibold text-eciBlack">Sector Identification & CIS Download</h3>
+                </div>
+                <p class="text-eciCharcoal text-sm leading-relaxed font-light mb-6">
+                    Navigate to the master index and select your operational domain from our 8 specialized matrices (spanning Trade Finance, Agriculture, Music IP, Sole Traders, Logistics, Real Estate, Treasury, and Philanthropy). Each sector page hosts a dedicated Client Information Sheet (CIS) anchor. Download, review, and complete the CIS payload to establish baseline parameters for your audit.
+                </p>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="bg-white p-10 border border-eciBeige shadow-sm">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="font-mono text-xs bg-eciBlack text-eciBone px-3 py-1 uppercase tracking-widest">Phase 02</span>
+                    <h3 class="font-serif text-2xl font-semibold text-eciBlack">Encrypted Intake & Payload Transmit</h3>
+                </div>
+                <p class="text-eciCharcoal text-sm leading-relaxed font-light mb-6">
+                    Submit your completed CIS document URI and operational parameters through our masked intake terminals. All transmission channels are cryptographically protected, routing directly to ECI Headquarters without third-party exposure or unhashed logging.
+                </p>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="bg-white p-10 border border-eciBeige shadow-sm">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="font-mono text-xs bg-eciBlack text-eciBone px-3 py-1 uppercase tracking-widest">Phase 03</span>
+                    <h3 class="font-serif text-2xl font-semibold text-eciBlack">Algorithmic Telemetry & Rule Parsing</h3>
+                </div>
+                <p class="text-eciCharcoal text-sm leading-relaxed font-light mb-6">
+                    Once ingested, our local analytical engines process your data against rigorous domain standards. Whether evaluating ISO 15022 trade syntax, royalty split traps, municipal zoning encumbrances, or AML/KYC trust provenance, the system isolates structural anomalies and hidden liabilities instantly.
+                </p>
+            </div>
+
+            <!-- Phase 4 -->
+            <div class="bg-white p-10 border border-eciBeige shadow-sm">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="font-mono text-xs bg-eciBlack text-eciBone px-3 py-1 uppercase tracking-widest">Phase 04</span>
+                    <h3 class="font-serif text-2xl font-semibold text-eciBlack">Sovereign Execution & Validation</h3>
+                </div>
+                <p class="text-eciCharcoal text-sm leading-relaxed font-light mb-6">
+                    You receive uncompromised mathematical certainty and structural validation reports. ECI SL provides the architectural intelligence; you retain absolute command and execute your professional mandates with total defensibility.
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+    
+    <footer class="border-t border-eciBeige/50 bg-white py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-4">
+                <span class="font-serif text-xl font-bold tracking-widest text-eciGold">ECI SL</span>
+                <span class="font-mono text-[10px] text-eciCharcoal/40 uppercase tracking-widest hidden md:inline-block">| &copy; 2026 ECI SL. PROPRIETARY INTELLIGENCE. ALL RIGHTS RESERVED.</span>
+            </div>
+            <span class="font-mono text-xs text-eciCharcoal/50 uppercase tracking-widest font-semibold">Operator's Guide // Secure Node</span>
+        </div>
+    </footer>
+</body>
+</html>
