@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECI SL | Institutional Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="eci_sovereign.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        eciBlack: '#0a0a0a',
+                        eciCharcoal: '#2A2A2A',
+                        eciBone: '#EAE6DF', 
+                        eciBeige: '#E8DCC4',
+                        eciGold: '#C5A861',
+                        eciElectric: '#0070FF', 
+                        eciElectricGlow: '#00F0FF' 
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Cinzel', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #EAE6DF; color: #0a0a0a; }
+        .electric-glow { box-shadow: 0 0 12px rgba(0, 240, 255, 0.6); }
+        .status-blink { animation: blink 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-eciBone/90 backdrop-blur-md border-b border-eciBeige/50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <svg class="w-5 h-5 text-eciGold inline-block mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                <div class="w-2 h-2 bg-eciElectricGlow rounded-full status-blink electric-glow"></div>
+                <span class="font-serif text-2xl tracking-widest text-eciBlack font-semibold">ECI SL</span>
+            </div>
+            <div class="hidden md:flex space-x-10">
+                <a href="#firewall" class="text-xs font-semibold tracking-widest text-eciCharcoal hover:text-eciElectric uppercase transition-colors">Posture</a>
+                <a href="#matrix" class="text-xs font-semibold tracking-widest text-eciCharcoal hover:text-eciElectric uppercase transition-colors">Dual-Core Matrix</a>
+                <a href="#intake" class="text-xs font-semibold tracking-widest text-eciCharcoal hover:text-eciElectric uppercase transition-colors">Intake</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. The Hook (Centered Institutional Hero) -->
+    <main class="flex-grow pt-32">
+        <div class="max-w-5xl mx-auto px-6 py-28 lg:py-40 text-center flex flex-col items-center justify-center">
+            
+            <!-- Symmetric Telemetry Tag -->
+            <div class="flex items-center gap-4 mb-8 justify-center">
+                <div class="h-[1px] w-12 bg-eciElectric"></div>
+                <p class="text-eciElectric font-mono text-xs font-bold tracking-widest uppercase">Sovereign Data Architecture</p>
+                <div class="h-[1px] w-12 bg-eciElectric"></div>
+            </div>
+            
+            <!-- Centered Header -->
+            <h1 class="font-serif text-5xl lg:text-7xl font-bold text-eciBlack leading-tight mb-8">
+                Structural Integrity <br>
+                <span class="text-eciGold italic font-medium text-4xl lg:text-6xl">in a volatile baseline.</span>
+            </h1>
+            
+            <!-- Centered Anchor Text -->
+            <p class="font-sans text-lg text-eciCharcoal max-w-2xl mx-auto leading-relaxed font-light">
+                Institutional-grade validation, macroeconomic telemetry, and capital structuring. We bypass commercial lag to deliver raw, uncompromised intelligence to deal teams and sovereign architects.
+            </p>
+        </div>
+
+        <!-- 2. The Legal Firewall -->
+        <div id="firewall" class="bg-eciBlack text-eciBone py-20">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2 class="font-mono text-eciElectric text-sm tracking-widest uppercase mb-6">[ OPERATIONAL POSTURE & COMPLIANCE ]</h2>
+                <p class="text-lg lg:text-xl font-light leading-relaxed">
+                    ECI SL is a technology and sovereign data architecture firm. We do not provide licensed financial, legal, or trading advice. We provide <strong class="text-eciGold font-semibold">Mathematical Certainty, Algorithmic Telemetry, and Deep-Vector Due Diligence</strong>. We sell the calculator; you make the decision. 150% verified truth.
+                </p>
+            </div>
+        </div>
+
+        <!-- 3. The Dual-Core Matrix -->
+        <div id="matrix" class="py-32 border-b border-eciBeige/50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-20">
+                    <h2 class="font-serif text-4xl font-bold text-eciBlack">The Dual-Core Matrix</h2>
+                    <p class="text-eciCharcoal mt-4 max-w-2xl mx-auto">Proprietary engines designed for both institutional capital flows and universal commercial independence.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Core A -->
+                    <div class="bg-white p-10 border border-eciBeige shadow-sm group hover:border-eciElectric transition-colors">
+                        <div class="h-[2px] w-12 bg-eciGold mb-6 group-hover:bg-eciElectric transition-colors"></div>
+                        <h3 class="font-serif text-2xl font-semibold text-eciBlack mb-4">Core A: Institutional Capital</h3>
+                        <p class="text-eciCharcoal text-sm leading-relaxed mb-6 font-light">
+                            High-stakes verification spanning SBLC, Bank Guarantees, MT760 parsing, Corporate M&A audit dossiers, and Private Placement Program (PPP) capital structuring.
+                        </p>
+                        <a href="matrix_trade_finance.html" class="font-mono text-xs font-semibold text-eciElectric uppercase hover:text-eciBlack transition-colors">Enter Institutional Sector &rarr;</a>
+                    </div>
+
+                    <!-- Core B -->
+                    <div class="bg-white p-10 border border-eciBeige shadow-sm group hover:border-eciElectric transition-colors">
+                        <div class="h-[2px] w-12 bg-eciGold mb-6 group-hover:bg-eciElectric transition-colors"></div>
+                        <h3 class="font-serif text-2xl font-semibold text-eciBlack mb-4">Core B: Universal SIAI</h3>
+                        <p class="text-eciCharcoal text-sm leading-relaxed mb-6 font-light">
+                            Sovereign AI tailored for independence. Yield prediction for agriculture, royalty DD for music IP, and automated operational telemetry for startups and sole traders.
+                        </p>
+                        <a href="matrix_agriculture.html" class="font-mono text-xs font-semibold text-eciElectric uppercase hover:text-eciBlack transition-colors">Enter Universal Sector &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Masked Intake Terminal -->
+        <div id="intake" class="py-32 bg-[#F4F1EA]">
+            <div class="max-w-3xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <p class="text-eciGold font-mono text-xs font-semibold tracking-widest uppercase mb-2">Encrypted Channel</p>
+                    <h2 class="font-serif text-3xl font-bold text-eciBlack">Request Intelligence & Structuring</h2>
+                    <p class="text-sm text-eciCharcoal mt-4">Payloads are routed securely to ECI Headquarters. Email addresses are cryptographically masked in source.</p>
+                </div>
+                
+                <form action="https://formsubmit.co/YOUR_HASHED_TOKEN_HERE" method="POST" class="space-y-8">
+                    <input type="hidden" name="_subject" value="New ECI SL Secure Intake">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="block font-mono text-xs text-eciCharcoal uppercase tracking-wider mb-2">Entity / Principal</label>
+                            <input type="text" name="Entity" required class="w-full bg-white border border-eciBeige p-4 text-eciBlack font-sans text-sm focus:outline-none focus:border-eciElectric">
+                        </div>
+                        <div>
+                            <label class="block font-mono text-xs text-eciCharcoal uppercase tracking-wider mb-2">Secure Email</label>
+                            <input type="email" name="Email" required class="w-full bg-white border border-eciBeige p-4 text-eciBlack font-sans text-sm focus:outline-none focus:border-eciElectric">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block font-mono text-xs text-eciCharcoal uppercase tracking-wider mb-2">Mandate / Scope of DD Required</label>
+                        <textarea name="Mandate" rows="5" required class="w-full bg-white border border-eciBeige p-4 text-eciBlack font-sans text-sm focus:outline-none focus:border-eciElectric"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-eciBlack text-eciBone font-mono text-xs uppercase tracking-widest py-5 hover:bg-eciElectric hover:text-eciBlack transition-colors">
+                        Transmit Encrypted Mandate
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="border-t border-eciBeige/50 bg-white py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-4">
+                <span class="font-serif text-xl font-bold tracking-widest text-eciGold">ECI SL</span>
+                <span class="font-mono text-[10px] text-eciCharcoal/40 uppercase tracking-widest hidden md:inline-block">| &copy; 2026 ECI SL. PROPRIETARY INTELLIGENCE. ALL RIGHTS RESERVED.</span>
+            </div>
+            <span class="font-mono text-xs text-eciCharcoal/50 uppercase tracking-widest font-semibold">Sovereign Architecture // Live Node</span>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-4 md:hidden text-center">
+             <span class="font-mono text-[10px] text-eciCharcoal/40 uppercase tracking-widest">&copy; 2026 ECI SL. ALL RIGHTS RESERVED.</span>
+        </div>
+    </footer>
+</body>
+</html>

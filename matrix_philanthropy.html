@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECI SL | Matrix 08: Philanthropy & Trusts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="eci_sovereign.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        eciBlack: '#0a0a0a',
+                        eciCharcoal: '#2A2A2A',
+                        eciBone: '#EAE6DF', 
+                        eciBeige: '#E8DCC4',
+                        eciGold: '#C5A861',
+                        eciElectric: '#0070FF', 
+                        eciElectricGlow: '#00F0FF' 
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Cinzel', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #EAE6DF; color: #0a0a0a; }
+        .electric-glow { box-shadow: 0 0 12px rgba(0, 240, 255, 0.6); }
+        .status-blink { animation: blink 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-sans">
+
+    <!-- Secondary Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-eciBone/90 backdrop-blur-md border-b border-eciBeige/50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <svg class="w-5 h-5 text-eciGold inline-block mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                <span class="font-serif text-2xl tracking-widest text-eciBlack font-semibold">ECI SL <span class="text-eciCharcoal/40 font-mono text-sm ml-2">// MATRIX 08</span></span>
+            </div>
+            <div>
+                <a href="index.html" class="text-xs font-semibold tracking-widest text-eciCharcoal hover:text-eciElectric uppercase transition-colors">&larr; Return to Main Node</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sector Hero -->
+    <main class="flex-grow pt-32">
+        <div class="max-w-5xl mx-auto px-6 py-20 text-center flex flex-col items-center justify-center border-b border-eciBeige/50 mb-20">
+            <h1 class="font-serif text-4xl lg:text-6xl font-bold text-eciBlack leading-tight mb-6">
+                Philanthropy, Trusts & <br>
+                <span class="text-eciGold italic font-medium text-3xl lg:text-5xl">Fund Raising Compliance</span>
+            </h1>
+            <p class="font-sans text-lg text-eciCharcoal max-w-2xl mx-auto leading-relaxed font-light">
+                SIAI compliance verification tools that trace capital provenance, execute AML/KYC logic, and audit fund deployment to guarantee absolute institutional transparency.
+            </p>
+        </div>
+
+        <!-- Document Processing Specs -->
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 mb-32">
+            <div class="bg-white p-10 border border-eciBeige shadow-sm">
+                <h3 class="font-mono text-xs text-eciElectric tracking-widest uppercase mb-4">[ ALGORITHMIC TELEMETRY ]</h3>
+                <h4 class="font-serif text-2xl font-semibold text-eciBlack mb-4">Provenance & Traceability</h4>
+                <p class="text-eciCharcoal text-sm leading-relaxed font-light mb-6">
+                    We parse donor registries, trust deeds, and capital allocation pathways. Our engines verify legal integrity and compliance trails, ensuring foundations operate with ironclad defensibility against regulatory friction.
+                </p>
+            </div>
+            
+            <div class="bg-white p-10 border border-eciBeige shadow-sm flex flex-col justify-center items-center text-center">
+                <h3 class="font-serif text-2xl font-semibold text-eciBlack mb-4">Initiate Protocol</h3>
+                <p class="text-eciCharcoal text-sm leading-relaxed font-light mb-8">
+                    To engage ECI SL for trust auditing or compliance verification, complete the sector-specific Client Information Sheet (CIS).
+                </p>
+                <!-- CIS Download Anchor -->
+                <a href="cis_templates/CIS_08_PHILANTHROPY.md" download class="inline-block bg-eciBlack text-eciBone px-8 py-4 font-mono text-xs uppercase tracking-widest hover:bg-eciElectric hover:text-eciBlack transition-colors shadow-lg">
+                    &darr; Download CIS [PDF / 850KB]
+                </a>
+            </div>
+        </div>
+
+        <!-- Sector-Specific Intake -->
+        <div class="py-32 bg-[#F4F1EA]">
+            <div class="max-w-3xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <p class="text-eciGold font-mono text-xs font-semibold tracking-widest uppercase mb-2">Matrix 08 Channel</p>
+                    <h2 class="font-serif text-3xl font-bold text-eciBlack">Upload CIS & Request Compliance Audit</h2>
+                    <p class="text-sm text-eciCharcoal mt-4">For family offices, trusts, and non-profit executives.</p>
+                </div>
+                
+                <form action="https://formsubmit.co/YOUR_HASHED_TOKEN_HERE" method="POST" class="space-y-8">
+                    <input type="hidden" name="_subject" value="Matrix 08: Philanthropy Submission">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="block font-mono text-xs text-eciCharcoal uppercase tracking-wider mb-2">Trust / Foundation Entity</label>
+                            <input type="text" name="Entity" required class="w-full bg-white border border-eciBeige p-4 text-eciBlack font-sans text-sm focus:outline-none focus:border-eciElectric">
+                        </div>
+                        <div>
+                            <label class="block font-mono text-xs text-eciCharcoal uppercase tracking-wider mb-2">Mandate / Capital Scope</label>
+                            <input type="text" name="Mandate" placeholder="e.g. Endowment Audit / €10M+" required class="w-full bg-white border border-eciBeige p-4 text-eciBlack font-sans text-sm focus:outline-none focus:border-eciElectric">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block font-mono text-xs text-eciCharcoal uppercase tracking-wider mb-2">CIS Download Link / Secure Cloud URI</label>
+                        <input type="url" name="CIS_Link" placeholder="Provide link to completed CIS..." required class="w-full bg-white border border-eciBeige p-4 text-eciBlack font-sans text-sm focus:outline-none focus:border-eciElectric">
+                    </div>
+                    <button type="submit" class="w-full border border-eciCharcoal bg-transparent text-eciBlack font-mono text-xs uppercase tracking-widest py-5 hover:bg-eciBlack hover:text-eciBone transition-colors">
+                        Transmit Protocol
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="border-t border-eciBeige/50 bg-white py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-4">
+                <span class="font-serif text-xl font-bold tracking-widest text-eciGold">ECI SL</span>
+                <span class="font-mono text-[10px] text-eciCharcoal/40 uppercase tracking-widest hidden md:inline-block">| &copy; 2026 ECI SL. PROPRIETARY INTELLIGENCE. ALL RIGHTS RESERVED.</span>
+            </div>
+            <span class="font-mono text-xs text-eciCharcoal/50 uppercase tracking-widest font-semibold">Matrix 08 // Secure Node</span>
+        </div>
+    </footer>
+</body>
+</html>
