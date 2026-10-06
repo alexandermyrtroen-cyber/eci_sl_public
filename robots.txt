@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://ecisl.duckdns.org/sitemap.xml
